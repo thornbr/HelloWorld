@@ -1,13 +1,8 @@
+#include "hello.h"
 #include <iostream>
 
-int main()
+void Hello::SayHelloWorld()
 {
-    std::cout << "What is your name?" << std::endl;
-    std::string name;
-
-    std::cin >> name;
-
-    std::cout << "Hello, " << name << "!" << std::endl;
-    std::cout << "Your name is " << name.length() << " characters long!" << std::endl;
-    return 0;
+    std::cout << "Hello, " << Name << "!" << std::endl;
+    std::cout << "Your name is " << Name.length() << " characters long!" << std::endl;
 }
